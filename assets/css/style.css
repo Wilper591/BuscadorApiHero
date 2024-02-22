@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#btnInput {
+    width: 5rem;
+}
+#contenedorInfo{
+    margin-bottom: 3rem;
+    padding-left: 4rem;
+}
+#tituloHero {
+    margin-left: 10rem;
+    font-size: 2rem;
+}
+#cardHero {
+    max-width: 150rem;
+}
+#chartContainer {
+    height: 100%; 
+    width: 100%;
+    margin: 3rem;
+    padding: 0 3rem 0 3rem;
+}

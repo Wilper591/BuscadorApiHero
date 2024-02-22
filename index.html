@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Jorge Alberto Cerda Rodriguez" />
+    <title>Prueba Encuentra tu SuperHero</title>
+    <!-- Bootstrap 5.3.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">
+            <img
+              src="./assets/img/favicon.ico"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            SuperHero
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Sección Principal -->
+      <section>
+        <div class="text-center m-3">
+          <img src="./assets/img/sh1.jpg" alt="Super Hero" />
+        </div>
+
+        <div id="containerInput" class="container my-3">
+          <h1>Encuentra a tu SuperHero</h1>
+          <label for="inputHero" class="form-label"
+            >Ingresa el número del SuperHero a buscar</label
+          >
+          <input
+            id="inputHero"
+            type="text"
+            class="form-control"
+            placeholder="Ingresa el ID de tu Heroe"
+          />
+          <button id="btnInput" type="submit" class="btn btn-primary my-3">
+            Buscar
+          </button>
+        </div>
+      </section>
+      <!-- Sección Resultados -->
+      <section>
+        <div id="errorHero" class="text-center text-danger"></div>
+        <div id="contenedorInfo" class="d-flex container-fluid">
+          <div class="justify-content-center align-items-center" id="resultadoHero"></div>
+          <div class="container" id="chartContainer"></div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap 5.3.2 -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- jQuery Canvas.js -->
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+    <!-- JS -->
+    <script src="./assets/js/consultaAPI.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
