@@ -6,7 +6,7 @@ jQuery.fn.ApiHero = function () {
     url: `https://www.superheroapi.com/api.php/${tokenApi}/${heroId}`,
     dataType: "json",
     success: function (dataHero) {
-      limpiarHTML();
+      limpiarHTMLCard();
       mostrarHero(dataHero);
       graficoHero(dataHero);
     },
@@ -70,7 +70,7 @@ function graficoHero(dataHero) {
   $("#chartContainer").CanvasJSChart(options);
 }
 
-function limpiarHTML() {
+function limpiarHTMLCard() {
   const cardHero = $("#resultadoHero");
   cardHero.empty();
 }

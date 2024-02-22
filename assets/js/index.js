@@ -1,5 +1,5 @@
 $("#btnInput").on("click", function () {
-  limpiarHTML();
+  limpiarHTMLError();
   let heroId = Number($("#inputHero").val());
   if (heroId <= 0 || heroId > 731 || heroId === "") {
     let errormsj = $("#errorHero").append(
@@ -13,7 +13,7 @@ $("#btnInput").on("click", function () {
   }
 });
 
-function limpiarHTML() {
+function limpiarHTMLError() {
   const errorHero = $("#errorHero");
   errorHero.empty();
 }
